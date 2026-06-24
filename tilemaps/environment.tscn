@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c3w41v0kl6wfv"]
+
+[node name="Environment" type="Node2D"]
+
+[node name="Background TileMap" type="TileMapLayer" parent="."]
+
+[node name="Foreground TileMap" type="TileMapLayer" parent="."]

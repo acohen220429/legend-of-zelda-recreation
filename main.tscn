@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://5mp6xvtm4kon"]
+
+[ext_resource type="PackedScene" uid="uid://c3w41v0kl6wfv" path="res://tilemaps/environment.tscn" id="1_5buil"]
+[ext_resource type="Script" path="res://main.gd" id="1_yjagf"]
+[ext_resource type="PackedScene" uid="uid://13cwnvi8q1tf" path="res://player.tscn" id="2_53k2s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7cwf"]
+size = Vector2(20, 33)
+
+[node name="main" type="Node"]
+script = ExtResource("1_yjagf")
+
+[node name="Environment" parent="." instance=ExtResource("1_5buil")]
+position = Vector2(-11, -319)
+
+[node name="Player" parent="." instance=ExtResource("2_53k2s")]
+position = Vector2(133, 186)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(251, 161)
+
+[node name="ScreenTransitionTrigger" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScreenTransitionTrigger"]
+position = Vector2(1, 176.5)
+shape = SubResource("RectangleShape2D_v7cwf")

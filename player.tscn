@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://13cwnvi8q1tf"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_21csj"]
-[ext_resource type="Texture2D" uid="uid://by0w4kt1rn6rv" path="res://sprites/player_right.png" id="2_b7rx1"]
-[ext_resource type="Texture2D" uid="uid://bp6yrr0hb4ll7" path="res://sprites/player_down.png" id="2_doeb5"]
-[ext_resource type="Texture2D" uid="uid://c6krkcsn16a7u" path="res://sprites/player_up.png" id="3_b37n7"]
-[ext_resource type="Texture2D" uid="uid://bjglciv1iy8su" path="res://sprites/player_left.png" id="4_mxgm5"]
+[ext_resource type="Texture2D" uid="uid://cnukggroyewqt" path="res://sprites/Character Back.png" id="2_v2nsy"]
+[ext_resource type="Texture2D" uid="uid://iaovv2n4m3m1" path="res://sprites/Character Front.png" id="3_d82tj"]
+[ext_resource type="Texture2D" uid="uid://d3tx5ob8n65rq" path="res://sprites/Character Left.png" id="4_4y41v"]
+[ext_resource type="Texture2D" uid="uid://bhgeqrrdj2jpu" path="res://sprites/Character Right.png" id="5_rv83o"]
 [ext_resource type="Texture2D" uid="uid://dd7w7tfdtsnla" path="res://sprites/weapon.png" id="6_yevct"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wwwcr"]
@@ -16,13 +16,13 @@ size = Vector2(26, 32)
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(2, 3)
 script = ExtResource("1_21csj")
-texture_down = ExtResource("2_doeb5")
-texture_up = ExtResource("3_b37n7")
-texture_left = ExtResource("4_mxgm5")
-texture_right = ExtResource("2_b7rx1")
+texture_down = ExtResource("3_d82tj")
+texture_up = ExtResource("2_v2nsy")
+texture_left = ExtResource("4_4y41v")
+texture_right = ExtResource("5_rv83o")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_b37n7")
+texture = ExtResource("2_v2nsy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_wwwcr")
